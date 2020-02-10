@@ -14,10 +14,10 @@
 
 
 function deepEqual(first,second) {
-  let firstKeys = Object.keys(first)
-  let secondKeys = Object.keys(second)
+  let firstKeys = Object.keys(first);
+  let secondKeys = Object.keys(second);
   
-  if (firstKeys.length !== secondKeys.length) return false
+  if (firstKeys.length !== secondKeys.length) return false;
   
   for(let i = 0; i < firstKeys.length; i++) {
     if(typeof first[firstKeys[i]] === 'object' && first[firstKeys[i]] != null) {
@@ -32,7 +32,7 @@ function deepEqual(first,second) {
       }
     }
   }
-  // console.log('deepEqual run succesfull')
+  // console.log('deepEqual run successful')
   return true;
 }
 

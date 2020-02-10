@@ -12,8 +12,8 @@
 // Functional reverse, copying and not mutating original array
 
 function reverseArray(arr) {
-  let arrCopy = [...arr]
-  let reversedArr = []
+  let arrCopy = [...arr];
+  let reversedArr = [];
   
   for (let item of arr) {
     reversedArr.push(arrCopy.pop());	
@@ -26,8 +26,8 @@ function reverseArray(arr) {
 
 function reverseArrayInPlace(arr) {
   for (let i = 0; i < Math.floor(arr.length / 2); i++) {
-    let item = arr[i]
-    arr[i] = arr[arr.length - 1 - i]
+    let item = arr[i];
+    arr[i] = arr[arr.length - 1 - i];
     arr[arr.length - 1 - i] = item
   }
 }
