@@ -10,11 +10,11 @@ function flatArray(arr) {
   return arr.reduce((flat, toFlatten) => flat.concat(toFlatten)) 
 }
 
-console.log(flatArray(arrays))
+console.log(flatArray(arrays));
 
 // -> [1, 2, 3, 4, 5, 6, 7]
 
-// Also found online a solution that included flattening further embeded arrays.
+// Also found online a solution that included flattening further embedded arrays.
 // It uses recursive approach to flatten inner arrays.
 
 function flatten(arr) {
