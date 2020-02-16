@@ -19,7 +19,6 @@ function dominantDirection(text) {
     return script ? script.direction : "none";
   }).filter(({name}) => name !== "none");
 
-  console.log(scripts);
   let result = {name: 'none', count: 0};
 
   // this map can be replaced with reduce like this:

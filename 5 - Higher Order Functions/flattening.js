@@ -7,7 +7,7 @@
 let arrays = [[1, 2, 3], [4, 5], [6], [7]];
 
 function flatArray(arr) {
-  return arr.reduce((flat, toFlatten) => flat.concat(toFlatten)) 
+  return arr.reduce((flat, toFlatten) => flat.concat(toFlatten))
 }
 
 console.log(flatArray(arrays));
